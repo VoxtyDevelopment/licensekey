@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function checkLicenseKeyInAPI(key) {
     try {
-        const response = await axios.post('https://api.ecrpc.online/validate', {
+        const response = await axios.post('API_URL', {
             license_key: key
         });
 
